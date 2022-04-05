@@ -61,7 +61,7 @@ The snakefile shouldn't be modified. A provided `config.yaml` file takes as inpu
  * **Index_rnaseq** : index file location for Kallisto or Salmon, index folder location for STAR method. Make sure the index you're using was build with the right version of the method selected.
  * **Sample_sheet** results from illumina sequencing. It is needed for Illumina `.bcl` to `.fastq` conversion (Convert_bcl2fastq = "yes").
  * **Adapter** : Path to the adapter used for illumina sequencing that is to be trimmed. Required for Trimmomatic, but not for Trim-galore.
- * **Samples** : the list of all samples to be analysed. It should be a path to a `.txt` file with the list of samples in it. Only required if you don't run `bcl2fastq`.
+ * **Samples** : the list of all samples to be analysed. It should be the path to `samples.txt` file with the list of samples generated in the TrimFastq directory inside it. Only required if you don't run `bcl2fastq`.
   * **Trim_with** : chose between one of the two trimmer
 
  ### Index building
